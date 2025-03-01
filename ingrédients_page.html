@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'ingrédients</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <style>
+        .font-petemoss { font-family: 'Petemoss', cursive; }
+    </style>
+</head>
+<body class="bg-bg text-gray-800 min-h-screen flex flex-col">
+    
+    <!-- Navbar -->
+    <nav class="bg-secondary shadow-md py-1">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center">
+            <div class="flex items-center space-x-0">
+                <button class="px-4 rounded-full bg-primary text-primary">aaa</button>
+                <a class="text-4xl text-black font-petemoss">Ala Kifek</a>
+            </div>
+            <ul class="flex p-2 m-0 space-x-3">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Petits-Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Diner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dessert  </a></li>
+           
+            
+            <div class="flex items-center space-x-1 p-0 m-0">
+                <!-- Icône Utilisateur -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-primary">
+                    <path d="M12 14c4.418 0 8 1.79 8 4v2H4v-2c0-2.21 3.582-4 8-4zm0-2c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+            
+                <!-- Icône Panier -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-primary">
+                    <path d="M5 3l1 16h12l1-16H5z"/>
+                </svg>
+            </div>
+        </ul>
+            
+    </div>
+    </nav>
+
+
+
+    <section class="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+         <!-- Carte Produit Exemple -->
+         <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <button class="absolute top-2 right-2 text-red-500 text-xl">❤️</button>
+            <img src="images/huile.png" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Huile</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/couscous.png" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Couscous</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/tomatec.jpg" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Tomate Concentré</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/carotte.jpg" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Carotte</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <button class="absolute top-2 right-2 text-red-500 text-xl">❤️</button>
+            <img src="images/pois.jpg" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Pois Chiche</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/filet_poulet_web.png" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Poulet</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/tt.jpg" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Tomate</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/pm.png" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">Pomme de terre</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        <div class="bg-[#E6E6E6] p-4 rounded-lg shadow-lg relative text-center w-full">
+
+            <div class="absolute top-2 left-2 text-black text-xl">✖</div>
+            <div class="absolute top-2 right-2 text-black text-3xl">♡</div>
+
+            <img src="images/onion.jpg" alt="Huile" class="w-24 h-24 mx-auto"> 
+            <h2 class="text-lg font-semibold mt-2">onion</h2>
+            <div class="flex justify-center items-center mt-2">
+                <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">-    1   +</button>
+            </div>
+            <div class="flex justify-center space-x-2 mt-2 text-sm">
+                <button class="bg-green-500 text-white px-3 py-1 rounded">Standard</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Économique</button>
+                <button class="bg-gray-600 text-white px-3 py-1 rounded">Premium</button>
+            </div>
+        </div>
+        
+    </section>
+           <!-- Bouton de confirmation -->
+    <div class="text-center mt-6">
+        <button class="bg-primary text-white px-6 py-2 rounded-full shadow-lg text-lg">Ajouter dessert et confirmer</button>
+    </div>
+
+        
+   
+ 
+
+    
+    <footer class="bg-secondary text-white py-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Liens alignés à gauche -->
+            <ul class="flex space-x-4 justify-start">
+                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+            </ul>
+            
+            <!-- Liens alignés à droite -->
+            <ul class="flex space-x-4 justify-end">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    
