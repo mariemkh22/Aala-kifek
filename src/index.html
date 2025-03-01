@@ -1,0 +1,173 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ala Kifek - Cuisine Tunisienne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    
+<style>
+
+body {
+  margin: 0;
+}
+</style>
+
+</head>
+<header>
+    <nav class="main-nav">
+        <a href="index.html" style="style:none;">
+            <div class="logo">
+                <span class="toggle-switch"></span>
+                <h1 class="logo-name font-petemoss">Ala Kifek</h1>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Petits-Dejeuner</a></li>
+            <li><a href="#">Dejeuner</a></li>
+            <li><a href="#">Diner</a></li>
+            <li><a href="#">dessert</a></li>
+        </ul>
+        <div class="nav-actions" style="display: flex; gap:1rem ;padding-right: 1rem;">
+            
+            <a href="panier.html" class="user-account" style="style:none;">
+                <i class="material-icons">shopping_cart</i>
+                
+            </a>
+            <a href="#" class="cart" style="style:none;">
+                
+                <i class="material-icons">account_circle</i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body class="text-[#262d44]">
+   
+    
+        <main>
+            <section class="hero-section">
+                <img src="./assets/images/hero.png" alt="kosksi" class="">
+            </section>
+    
+            <section class="hero">
+                <div class="hero-text-container">
+                    <p class="hero-text">
+                        "Cuisinez sainement avec nos kits repas <span class="bio">bio</span>, pratiques et équilibrés."
+                    </p>
+                    <img src="./assets/images/couscous.png" alt="kosksi" class="">
+    
+                </div>
+            </section>
+           
+    
+            <section class="dishes">
+                
+                <div class="dishes-header">
+                    <h2 class="dish-title-header">Nos Plats</h2>
+                    <button class="filter-btn">
+                        <img src="./assets/images/filtre.png" alt="Filter" class="filter-icon">
+                    </button>
+                </div>
+    
+                <div class="dishes-grid">
+                    <article class="dish-card">
+                        <img src="./assets/images/lablebi.png" alt="Lablebi" class="dish-image">
+            <div class="dish-info">
+                <h3 class="dish-title">Lablebi</h3>
+                <div class="dish-actions">
+                    <button class="add-btn">+</button>
+                    <span class="price">8.00 DT</span>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </article>
+        <a href="detail.html" style="style:none;">
+            <article class="dish-card">
+                <img src="./assets/images/kosksi.png" alt="Couscous au légumes et au poulet" class="dish-image">
+                <div class="dish-info">
+                    <h3 class="dish-title">Couscous au légumes et au
+                                poulet</h3>
+                                <div class="dish-actions">
+                                    <button class="add-btn">+</button>
+                                    <span class="price">15.00 DT</span>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <article class="dish-card">
+                        <img src="./assets/images/ojja.png" alt="Oujja" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-title">Oujja</h3>
+                            <div class="dish-actions">
+                                <button class="add-btn">+</button>
+                                <span class="price">6.00 DT</span>
+                                <button class="favorite-btn">♡</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="./assets/images/mokli.png" alt="Mokli" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-title">Lablebi</h3>
+                            <div class="dish-actions">
+                                <button class="add-btn">+</button>
+                                <span class="price">8.00 DT</span>
+                                <button class="favorite-btn">♡</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="./assets/images/makrouna.png" alt="Makrouna salsa" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-title">Makrouna salsa</h3>
+                            <div class="dish-actions">
+                                <button class="add-btn">+</button>
+                                <span class="price">10.00 DT</span>
+                                <button class="favorite-btn">♡</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="./assets/images/salade.png" alt="Salade mechouia" class="dish-image">
+                        <div class="dish-info">
+                            <h3 class="dish-title">Salade mechouia</h3>
+                            <div class="dish-actions">
+                                <button class="add-btn">+</button>
+                                <span class="price">9.00 DT</span>
+                                <button class="favorite-btn">♡</button>
+                            </div>
+                        </div>
+                    </article>
+    
+                   
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-links">
+                <!-- <img class="fb" src="./assets/images/fb.png" >
+                <img class="ig" src="./assets/images/ig.png" >
+                <img class="yt" src="./assets/images/yt.png" >
+                <img class="hs" src="./assets/images/hs.png" > -->
+
+                <a href="#" class="facebook">Facebook</a>
+                <a href="#" class="instagram">Instagram</a>
+                <a href="#" class="youtube">YouTube</a>
+                <a href="#" class="hashtag">Hashtag</a>
+            </div>
+        </footer>
+    
+</body>
+</html>
+

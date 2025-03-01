@@ -1,0 +1,67 @@
+.main-nav {
+    @apply flex items-center justify-between;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-color);
+    color: var(--primary-color);
+  
+    @media (max-width: 600px) {
+      flex-direction: column;
+      padding: 1rem 0;
+  }
+  
+  
+    .logo {
+      @apply flex items-center justify-center;
+  
+      gap: 1rem;
+      margin-left: 2rem;
+    }
+    .logo-name {
+      font-family: 'Petemoss', cursive;
+          color: var(--text-color);
+      font-size: 1.9rem;
+      font-weight: 600;
+    }
+  
+    .toggle-switch {
+      width: 45px;
+      height: 25px;
+      border-radius: 30px;
+      background-color: var(--primary-color);
+      @media (max-width: 600px) {
+        width: 25px;
+      height: 13px;
+    }
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+  
+      @media (max-width: 600px) {
+       
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    
+  
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  

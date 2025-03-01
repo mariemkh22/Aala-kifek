@@ -1,0 +1,700 @@
+/* src/css/main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ 
+--bg-color: #f4ecea;
+--card-color: #e5e5e5;
+--primary-color: #632645;
+--secondary-color: #f5f6f8;
+--text-color: #262d44;
+--bio-green: #77ae29;
+--border-radius: 8px;
+@apply flex items-center justify-center;
+}
+
+html {
+  margin: 0;
+  /* width: 100%; */
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+}
+
+.container {
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  padding: 0 0px;
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+    
+}
+}
+
+.main-nav {
+  @apply flex items-center justify-between;
+  margin: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-color);
+  color: var(--primary-color);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+
+  .logo {
+    @apply flex items-center justify-center;
+
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+  .logo-name {
+    font-family: 'Petemoss', cursive;
+        color: var(--text-color);
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .toggle-switch {
+    width: 45px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    @media (max-width: 600px) {
+      width: 25px;
+    height: 13px;
+  }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    @media (max-width: 600px) {
+     
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.hero-section {
+  height: 500px;
+  padding: 1rem;
+  margin: 1.6rem;
+  overflow: hidden;
+  
+  @media (max-width: 600px) {
+    height: 300px;
+     
+  }
+}
+
+.hero-section > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+
+ 
+  
+  @media (max-width: 600px) {
+    height: 300px;
+     
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    @apply flex items-center justify-center;
+
+
+ 
+    @media (max-width: 600px) {
+      left: 1rem;
+      right: 1rem;
+      padding: 1rem;       
+    }
+    .hero-text {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.4;
+
+     
+      @media (max-width: 600px) {
+        font-size: 1.2rem;
+               
+      }
+
+      .bio {
+        color: var(--bio-green);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+  .dishes-header {
+    @apply flex items-center justify-between;
+
+    margin: 1rem;
+    background: var(--card-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+  }
+  .dish-title-header {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+
+    @media (min-width: 601px) and (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+      
+  }
+  @media (max-width: 600px) {
+
+    grid-template-columns: 1fr;
+}
+    
+  }
+
+  .dish-card {
+    
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--card-color);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .dish-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .dish-info {
+      padding: 1rem;
+
+
+      .dish-actions {
+        @apply flex items-center justify-between;
+
+
+        .add-btn {
+          background: var(--primary-color);
+          color: white;
+          width: 32px;
+          height: 32px;
+        }
+
+        .favorite-btn {
+          background: none;
+          font-size: 1.5rem;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+
+  .dish-title {
+    font-size: 1.5rem;
+font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+.filter-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.filter-icon {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+}
+
+.recipe-detail {
+  padding: 2rem 0;
+
+  .recipe-header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 1rem 0;
+    }
+
+    .cooking-times {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+
+     
+      
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+
+      .time-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+      }
+    }
+.time-item > span {
+  color: #000;
+}
+   
+  }
+
+  .recipe-content {
+    margin-bottom: 2rem;
+
+    .recipe-image {
+      width: 100%;
+      height: auto;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .recipe-price {
+      padding: 1rem;
+      @apply flex items-center justify-between;
+
+
+      
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+      .portion-control {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+          background: var(--primary-color);
+          color: white;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+ Section .ingredients {
+  padding: 2rem;
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+  }
+
+  .ingredient-section {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1.5rem;
+
+    h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .spices-grid,
+    .products-grid,
+    .vegetables-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 1rem;
+    }
+
+    .bio-badge {
+      background: var(--bio-green);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .modify-ingredients {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+footer {
+  background: white;
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  @apply flex items-center justify-between;
+
+  .footer-links {
+    @apply flex justify-center;
+    gap: 2rem;
+    
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      @apply flex justify-center;
+
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .social-links {
+    @apply flex justify-center;
+    /* width: 25px; */
+    /* height: 25px; */
+
+    gap: 1rem;
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* Add these styles to the existing main.css file */
+/*? detail.html */
+
+
+.detail-hero-section {
+  @apply flex items-center justify-center;
+  background-color: var(--bg-color);
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+.detail-hero-info {
+  @apply flex items-center justify-between;
+  width: 100%;
+  gap: 2rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.detail-hero-info .left {
+  @apply flex flex-col items-center justify-center;
+  width: 50%;
+  
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+  .detail-buttons{
+    @apply flex items-center justify-center;
+    gap:10px;
+    font-size: 0.8rem;
+    
+    .add-list-btn{
+background-color: #632645;
+      color: white;
+padding: 0.5rem 2rem;
+border-radius: var(--border-radius);
+font-weight: 300;
+cursor: pointer;
+transition: all 0.2s ease;
+
+&:hover {
+  background-color: #792f54;
+}
+    }
+    
+    .tutoriel-btn {
+      background-color: #632645;
+      color: white;
+padding: 0.5rem 2rem;
+border-radius: var(--border-radius);
+font-weight: 300;
+cursor: pointer;
+transition: all 0.2s ease;
+
+&:hover {
+  background-color: #792f54;
+} }
+
+  }
+ 
+}
+
+.detail-hero-info .right {
+  @apply flex flex-col items-center justify-center;
+  width: 50%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.detail-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.cooking-times {
+  @apply flex items-center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.time-item {
+  @apply flex items-center;
+  gap: 0.5rem;
+}
+
+.clock-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.detail-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.recipe-price {
+  @apply flex items-center justify-between;
+  width: 100%;
+  /* background-color: white; */
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.portion-control {
+  @apply flex items-center;
+  gap: 1rem;
+}
+
+.portion-control button {
+  background-color: var(--primary-color);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #792f54;
+  }
+}
+
+.ingredients {
+  /* background-color: white; */
+  border-radius: var(--border-radius);
+  padding: 1rem;
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+.ingredients h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* margin-bottom: 2rem; */
+}
+
+.ingredients-header{
+  @apply flex items-center justify-between;
+  margin-bottom: 2rem;
+  background: var(--card-color);
+  padding: 0.9rem;
+  border-radius: var(--border-radius);
+
+}
+.ingredient-section {
+  margin-bottom: 2rem;
+}
+
+.ingredient-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.spices-grid,
+.products-grid,
+.vegetables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+
+.spice,
+.vegetable {
+  @apply flex flex-col items-center justify-center;
+  text-align: center;
+position: relative;
+}
+
+.spice-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.bio-badge {
+  background-color: var(--bio-green);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  position:absolute;
+  left:0px;
+  top:0;
+}
+
+.modify-ingredients-container {
+  width:100%;
+  @apply flex items-center justify-center;
+
+  .modify-ingredients {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.9rem 1rem;
+    border-radius: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 40%;
+    margin-top: 2rem;
+    
+    &:hover {
+      background-color: #792f54;
+    }
+  }
+  
+}

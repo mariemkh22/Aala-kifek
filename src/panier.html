@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Couscous avec Légumes - Ala Kifek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=salinity" />
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../dist/css/main.css" rel="stylesheet">
+    <!-- <link href="./css/navbar.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet"> -->
+    
+
+</head>
+<header>
+    <nav class="main-nav">
+        <a href="index.html" style="style:none;">
+            <div class="logo">
+                <span class="toggle-switch"></span>
+                <h1 class="logo-name font-petemoss">Ala Kifek</h1>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Petits-Dejeuner</a></li>
+            <li><a href="#">Dejeuner</a></li>
+            <li><a href="#">Diner</a></li>
+            <li><a href="#">dessert</a></li>
+        </ul>
+        <div class="nav-actions" style="display: flex; gap:1rem ;padding-right: 1rem;">
+            
+            <a href="panier.html" class="user-account" style="style:none;">
+                <i class="material-icons">shopping_cart</i>
+                
+            </a>
+            <a href="#" class="cart" style="style:none;">
+                
+                <i class="material-icons">account_circle</i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body class="font-sans" style="width:90%">
+    <!-- Navbar -->
+    
+    <!-- Contenu du panier -->
+    <div class="container mx-auto p-6">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl font-bold">&#8592;</span>
+            <h2 class="text-2xl font-bold text-black">Mon Panier</h2>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow mt-4">
+            <!-- Produit 1 -->
+            <div class="flex items-center justify-between border-b pb-2">
+                <img src="./assets/images/safa/lablebi.jpg" alt="Lablabi" class="w-20 h-20 rounded">
+                <span>Lablabi</span>
+                <div class="flex items-center space-x-2">
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">-</button>
+                    <span class="px-2">1</span>
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">+</button>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded">🗑</button>
+                </div>
+                <span>1 personne</span>
+                <span class="font-bold">8D</span>
+            </div>
+            <!-- Produit 2 -->
+            <div class="flex items-center justify-between border-b py-2">
+                <img src="./assets/images/safa/3eja.jpeg" alt="Ojja" class="w-20 h-20 rounded">
+                <span>Ojja</span>
+                <div class="flex items-center space-x-2">
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">-</button>
+                    <span class="px-2">2</span>
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">+</button>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded">🗑</button>
+                </div>
+                <span>2 personnes</span>
+                <span class="font-bold">12D</span>
+            </div>
+            <!-- Total -->
+            <div class="flex items-center justify-between pt-2">
+                <span class="font-bold text-lg">Total:</span>
+                <span class="font-bold text-lg">28D</span>
+            </div>
+        </div>
+        
+        <!-- Livraison -->
+        <div class="mt-4 p-4 bg-white shadow rounded-lg">
+            <div class="flex justify-between items-center">
+                <span>Livraison 8D</span>
+                <input type="radio" name="livraison" checked> Payer à la livraison
+                <input type="radio" name="livraison"> En Dîner
+            </div>
+        </div>
+        
+        <!-- Suggestions -->
+        <h3 class="mt-6 text-lg font-bold text-center">Vous aimerez aussi</h3>
+        <div class="grid grid-cols-3 gap-4 mt-4">
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow text-center flex flex-col items-center">
+                <img src="./assets/images/safa/mokli.jpg" class="w-36 h-36 rounded object-cover">
+                <p class="mt-2">Mokli</p>
+                <span class="font-bold">9.000T</span>
+                <div class="flex justify-center space-x-2 mt-2">
+                    <span class="text-red-500">❤️</span>
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">+</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow text-center flex flex-col items-center">
+                <img src="./assets/images/safa/makarouna.JPG" class="w-36 h-36 rounded object-cover">
+                <p class="mt-2">Makrouna Salsa</p>
+                <span class="font-bold">8.000T</span>
+                <div class="flex justify-center space-x-2 mt-2">
+                    <span class="text-gray-500">♡</span>
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">+</button>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow text-center flex flex-col items-center">
+                <img src="./assets/images/safa/salade mechweya.jpg" class="w-36 h-36 rounded object-cover">
+                <p class="mt-2">Salade Mechouiya</p>
+                <span class="font-bold">10.000T</span>
+                <div class="flex justify-center space-x-2 mt-2">
+                    <span class="text-red-500">❤️</span>
+                    <button class="bg-[#5e1c44] text-white px-3 py-1 rounded">+</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-center mt-6">
+            <button class="bg-[#5e1c44] text-white px-6 py-2 rounded-lg">Voir tout</button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <!-- <section class="info">
+        <img src="images/profil.jpg" alt="Profil" class="profile-img">
+        <h2>Informations</h2>
+        <p><strong>Nom:</strong> Foulken Ben Foulen</p>
+        <p><strong>Téléphone:</strong> +216 58 585 222</p>
+        <p><strong>Email:</strong> foulkenbenfoulen@esprit.tn</p>
+        <p><strong>Adresse:</strong> Rue Souvenir / Ariana Soghra</p>
+        <button class="modify">Modifier</button>
+    </section> -->
+
+    <div class="bg-white mt-10 p-4 text-center shadow-md">
+        <div class="flex flex-col  justify-center space-x-4 border-b pb-4">
+            <h3 class="text-lg font-bold mb-2">Informations personnelles</h3>
+            <img src="./assets/images/safa/profil.jpg" alt="Profil" class="w-16 h-16 rounded-full border border-gray-400">
+            <div class="text-left">
+                <p class="font-semibold">Nom : <span class="font-normal">Foulen Ben Foulen</span></p>
+                <p class="font-semibold">Téléphone : <span class="font-normal">+216 98 585 222</span></p>
+                <p class="font-semibold">Email : <span class="font-normal">foulenbenfoulen@esprit.tn</span></p>
+            </div>
+        </div>
+        <button class="bg-red-500 text-white px-4 py-1 mt-4 rounded">Modifier</button>
+        <!-- <div class="mt-4 flex justify-center space-x-4 text-sm text-gray-600">
+            <a href="#" class="hover:underline">À propos</a>
+            <a href="#" class="hover:underline">Contact</a>
+        </div> -->
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-links">
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="instagram">Instagram</a>
+            <a href="#" class="youtube">YouTube</a>
+            <a href="#" class="hashtag">Hashtag</a>
+        </div>
+    </footer>
+
+</body>
+</html>
