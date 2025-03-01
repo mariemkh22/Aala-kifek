@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <style>
+        .font-petemoss { font-family: 'Petemoss', cursive; }
+    </style>
+</head>
+<body class="bg-bg text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-secondary shadow-md py-1">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center">
+            <div class="flex items-center space-x-0">
+                <button class="px-4 rounded-full bg-primary text-primary"></button>
+                <a class="text-4xl text-black font-petemoss">Ala Kifek</a>
+            </div>
+            <ul class="flex p-2 m-0 space-x-3">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Petits-Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Diner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dessert  </a></li>
+           
+            
+            <div class="flex items-center space-x-1 p-0 m-0">
+                <!-- Icône Utilisateur -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-primary">
+                    <path d="M12 14c4.418 0 8 1.79 8 4v2H4v-2c0-2.21 3.582-4 8-4zm0-2c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+            
+                <!-- Icône Panier -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-primary">
+                    <path d="M5 3l1 16h12l1-16H5z"/>
+                </svg>
+            </div>
+        </ul>
+            
+    </div>
+    </nav>
+<!-- Section d'inscription améliorée -->
+<section class="flex flex-grow items-center justify-center px-6 bg-gray-100 py-12">
+    <div class="bg-white shadow-xl rounded-xl p-10 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        <!-- Illustration -->
+        <div class="hidden md:flex justify-center">
+            <img src="\images\inscrit.jpeg" alt="Illustration d'inscription" class="rounded-xl w-10/12 object-cover shadow-lg">
+        </div>
+
+        <!-- Formulaire d'inscription -->
+        <div class="w-full">
+<h2 class="text-4xl text-black font-petemoss"><strong>Créer un compte</strong></h2>
+
+
+            <form>
+                <div class="mb-5">
+                    <label for="nom" class="block text-gray-700 font-medium mb-1">Nom complet</label>
+                    <input type="text" id="nom" name="nom" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 shadow-sm" placeholder="Nom complet" required>
+                </div>
+
+                <div class="mb-5">
+                    <label for="email" class="block text-gray-700 font-medium mb-1">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 shadow-sm" placeholder="Adresse e-mail" required>
+                </div>
+
+                <div class="mb-5">
+                    <label for="password" class="block text-gray-700 font-medium mb-1">Mot de passe</label>
+                    <input type="password" id="password" name="password" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 shadow-sm" placeholder="Mot de passe" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="confirm-password" class="block text-gray-700 font-medium mb-1">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 shadow-sm" placeholder="Confirmer le mot de passe" required>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg text-lg font-semibold transition-transform transform hover:scale-105 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 active:scale-95 duration-200">S'inscrire</button>
+            </form>
+
+            <p class="mt-6 text-center text-gray-600">Déjà un compte ? <a href="#" class="text-bg-primary hover:underline">Se connecter</a></p>
+        </div>
+    </div>
+</section>
+
+ 
+<footer class="bg-secondary text-white py-1">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Liens alignés à gauche -->
+        <ul class="flex space-x-4 justify-start">
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+        </ul>
+        
+        <!-- Liens alignés à droite -->
+        <ul class="flex space-x-4 justify-end">
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
+            <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
+        </ul>
+    </div>
+    
+    <div class="container mx-auto text-center  text-gray-500 py-4">
+        <p>&copy; 2025 AlaKifek. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>
