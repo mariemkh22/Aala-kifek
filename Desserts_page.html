@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .font-petemoss { font-family: 'Petemoss', cursive; }
+    </style>
+</head>
+<body class="bg-bg text-gray-800 min-h-screen flex flex-col">
+    
+    <!-- Navbar -->
+    <nav class="bg-secondary shadow-md py-1">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center">
+            <div class="flex items-center space-x-0">
+                <button class="px-4 rounded-full bg-primary text-primary">aaa</button>
+                <a href="home.html" class="text-4xl text-black font-petemoss">Ala Kifek</a>
+            </div>
+            <ul class="flex p-2 m-0 space-x-3">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Petits-Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Diner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dessert  </a></li>
+           
+            
+                <div class="flex gap-4 pr-4">
+                    <a href="panier.html" class="no-underline">
+                        <i class="material-icons text-primary">shopping_cart</i>
+                    </a>
+                    <a href="#" class="no-underline">
+                        <i class="material-icons text-primary">account_circle</i>
+                    </a>
+                </div>
+        </ul>
+            
+    </div>
+    </nav>
+
+
+
+     <section class="container mx-auto px-6 py-16 text-center flex-grow">
+           
+    <h1 class="text-3xl font-bold mb-6">Desserts</h1>
+
+    <div class="grid grid-cols-3 gap-8">
+        <!-- Carte 1 -->
+        <div class="bg-[#E6E6E6] rounded-lg shadow-lg p-4 w-72 flex flex-col items-center">
+            <img src="images/asida.jpg" alt="Asidet Zgougou" class="w-full h-40 object-cover rounded-lg">
+            <h2 class="mt-3 font-semibold">Asidet Zgougou</h2>
+            <div class="flex justify-between w-full mt-2">
+                <button class="bg-[#6D0F45] text-white px-3 py-1 rounded">+</button>
+                <span class="font-bold">10.00dt</span>
+            </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="bg-[#E6E6E6] rounded-lg shadow-lg p-4 w-72 flex flex-col items-center">
+            <img src="images/baklawa.jpg" alt="Baklawa tunisienne" class="w-full h-40 object-cover rounded-lg">
+            <h2 class="mt-3 font-semibold">Baklawa tunisienne</h2>
+            <div class="flex justify-between w-full mt-2">
+                <button class="bg-[#6D0F45] text-white px-3 py-1 rounded">+</button>
+                <span class="font-bold">10.00dt</span>
+            </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="bg-[#E6E6E6] rounded-lg shadow-lg p-4 w-72 flex flex-col items-center">
+            <img src="images/kaak.jpg" alt="Kaak warka" class="w-full h-40 object-cover rounded-lg">
+            <h2 class="mt-3 font-semibold">Kaak warka</h2>
+            <div class="flex justify-between w-full mt-2">
+                <button class="bg-[#6D0F45] text-white px-3 py-1 rounded">+</button>
+                <span class="font-bold">10.00dt</span>
+            </div>
+        </div>
+
+        <!-- Carte 4 (centrée en bas) -->
+        <div class="col-span-3 flex justify-center">
+            <div class="bg-[#E6E6E6] rounded-lg shadow-lg p-4 w-72 flex flex-col items-center">
+                <img src="images/zrir.jpg" alt="Zrir" class="w-full h-40 object-cover rounded-lg">
+                <h2 class="mt-3 font-semibold">Zrir</h2>
+                <div class="flex justify-between w-full mt-2">
+                    <button class="bg-[#6D0F45] text-white px-3 py-1 rounded">+</button>
+                    <span class="font-bold">10.00dt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 flex justify-center gap-6 w-full">
+        <button class="bg-[#6D0F45] text-white px-8 py-3 rounded-full shadow-lg text-lg">Confirmer ma demande sans dessert</button>
+        <button class="bg-[#6D0F45] text-white px-8 py-3 rounded-full shadow-lg text-lg">Confirmer ma commande avec dessert</button>
+    </div>
+ 
+    </section>
+ 
+
+    <footer class="bg-secondary text-white py-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Liens alignés à gauche -->
+            <ul class="flex space-x-4 justify-start">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+            </ul>
+            
+            <!-- Liens alignés à droite -->
+            <ul class="flex space-x-4 justify-end">
+                <li><a href="about-us.html"  class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
+            </ul>
+        </div>
+        
+        <div class="container mx-auto text-center  text-gray-500 py-4">
+            <p>&copy; 2025 AlaKifek. Tous droits réservés.</p>
+        </div>
+    </footer>  
+    
+    
+    
