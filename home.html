@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Petemoss&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {  
+                    colors: {
+                        bgColor: '#f4ecea',
+                        cardColor: '#e4e4e4',
+                        primary: '#632645',
+                        secondary: '#f5f6f8',
+                        textColor: '#262d44',
+                        bioGreen: '#77ae29'
+                    },
+                    borderRadius: {
+                        standard: '8px'
+                    },
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'petemoss': ['Petemoss', 'cursive'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<header>
+        <!-- Navbar -->
+        <nav class="bg-secondary shadow-md py-1">
+            <div class="container mx-auto px-4 py-1 flex justify-between items-center">
+                <div class="flex items-center space-x-0">
+                    <button class="px-4 rounded-full bg-primary text-primary">aaa</button>
+                    <a href="home.html" class="text-4xl text-black font-petemoss">Ala Kifek</a>
+                </div>
+                <ul class="flex p-2 m-0 space-x-3">
+                    <li><a href="#" class="hover:text-black text-[18px] text-primary">Petits-Dejeuner  </a></li>
+                    <li><a href="#" class="hover:text-black text-[18px] text-primary">Dejeuner  </a></li>
+                    <li><a href="#" class="hover:text-black text-[18px] text-primary">Diner  </a></li>
+                    <li><a href="#" class="hover:text-black text-[18px] text-primary">Dessert  </a></li>
+               
+                
+                    <div class="flex gap-4 pr-4">
+                        <a href="panier.html" class="no-underline">
+                            <i class="material-icons text-primary">shopping_cart</i>
+                        </a>
+                        <a href="#" class="no-underline">
+                            <i class="material-icons text-primary">account_circle</i>
+                        </a>
+                    </div>
+            </ul>
+                
+        </div>
+        </nav>
+</header>
+<body  class="text-textColor font-poppins bg-bgColor m-0" style="width:90%">
+    
+
+
+    <main>
+        <section class="mx-6 my-6 p-4 h-[500px] overflow-hidden md:h-[500px]">
+            <img src="./assets/images/maram/hero.png" alt="kosksi" class="w-full h-full object-cover">
+        </section>
+
+        <section class="relative h-auto overflow-hidden">
+            <div class="absolute bottom-8 left-8 right-8 bg-cardColor p-8 rounded-standard flex items-center justify-center md:p-8 sm:left-4 sm:right-4 sm:p-4">
+                <p class="m-0 text-2xl leading-relaxed sm:text-lg">
+                    "Cuisinez sainement avec nos kits repas <span class="text-bioGreen font-semibold">bio</span>, pratiques et équilibrés."
+                </p>
+                <img src="./assets/images/maram/couscous.png" alt="kosksi" class="">
+            </div>
+        </section>
+       
+        <section>
+            <div class="shadow-md flex items-center justify-between m-4 bg-cardColor p-4 rounded-standard">
+                <h2 class="font-playfair m-0 text-2xl font-semibold">Nos Plats</h2>
+                <button class="cursor-pointer border-none bg-transparent">
+                    <img src="./assets/images/maram/filtre.png" alt="Filter" class="bg-transparent border-none w-[50px]">
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+                <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                    <img src="./assets/images/maram/lablebi.png" alt="Lablebi" class="w-full h-[200px] object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Lablebi</h3>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary text-white w-8 h-8">+</button>
+                            <span class="font-semibold">8.00 DT</span>
+                            <button class="bg-transparent text-2xl text-primary">♡</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <a href="detail.html" class="no-underline">
+                    <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                        <img src="./assets/images/maram/kosksi.png" alt="Couscous au légumes et au poulet" class="w-full h-[200px] object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Couscous au légumes et au poulet</h3>
+                            <div class="flex items-center justify-between">
+                                <button class="bg-primary text-white w-8 h-8">+</button>
+                                <span class="font-semibold">15.00 DT</span>
+                                <button class="bg-transparent text-2xl text-primary">♡</button>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                
+                <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                    <img src="./assets/images/maram/ojja.png" alt="Oujja" class="w-full h-[200px] object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Oujja</h3>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary text-white w-8 h-8">+</button>
+                            <span class="font-semibold">6.00 DT</span>
+                            <button class="bg-transparent text-2xl text-primary">♡</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                    <img src="./assets/images/maram/mokli.png" alt="Mokli" class="w-full h-[200px] object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Lablebi</h3>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary text-white w-8 h-8">+</button>
+                            <span class="font-semibold">8.00 DT</span>
+                            <button class="bg-transparent text-2xl text-primary">♡</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                    <img src="./assets/images/maram/makrouna.png" alt="Makrouna salsa" class="w-full h-[200px] object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Makrouna salsa</h3>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary text-white w-8 h-8">+</button>
+                            <span class="font-semibold">10.00 DT</span>
+                            <button class="bg-transparent text-2xl text-primary">♡</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class=" rounded-standard shadow-md overflow-hidden no-underline text-inherit m-[10px] p-[20px] bg-cardColor hover:translate-y-[-2px] hover:shadow-lg transition-transform">
+                    <img src="./assets/images/maram/salade.png" alt="Salade mechouia" class="w-full h-[200px] object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Salade mechouia</h3>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary text-white w-8 h-8">+</button>
+                            <span class="font-semibold">9.00 DT</span>
+                            <button class="bg-transparent text-2xl text-primary">♡</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Liens alignés à gauche -->
+            <ul class="flex space-x-4 justify-start">
+                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+            </ul>
+            
+            <!-- Liens alignés à droite -->
+            <ul class="flex space-x-4 justify-end">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
+            </ul>
+        </div>
+        
+        <div class="container mx-auto text-center  text-gray-500 py-4">
+            <p>&copy; 2025 AlaKifek. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>  
+</html>

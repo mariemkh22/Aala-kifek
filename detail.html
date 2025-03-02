@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Details></Details></title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<header>
+<body class="bg-bg text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-secondary shadow-md py-1">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center">
+            <div class="flex items-center space-x-0">
+                <button class="px-4 rounded-full bg-primary text-primary">aaa</button>
+                <a href="home.html" class="text-4xl text-black font-petemoss">Ala Kifek</a>
+            </div>
+            <ul class="flex p-2 m-0 space-x-3">
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Petits-Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dejeuner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Diner  </a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Dessert  </a></li>
+           
+            
+                <div class="flex gap-4 pr-4">
+                    <a href="panier.html" class="no-underline">
+                        <i class="material-icons text-primary">shopping_cart</i>
+                    </a>
+                    <a href="#" class="no-underline">
+                        <i class="material-icons text-primary">account_circle</i>
+                    </a>
+                </div>
+        </ul>
+            
+    </div>
+    </nav>
+</header>
+    
+    <main class="container mx-auto px-4 py-8">
+        <section  style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)" class=" rounded-lg p-6 mb-8">
+            <div class="flex flex-col jjustify-between md:flex-row md:space-x-8">
+                <div class="flex flex-col items-center justify-center md:w-1/2 mb-6 md:mb-0">
+                    <h1 class="text-3xl font-playfair font-bold mb-4">Kit Couscous avec Légumes :</h1>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <div class="flex items-center">
+                            <i class="material-icons text-black mr-2">more_time</i>
+                            <span class="text-black">10 min</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="material-icons text-black mr-2">alarm</i>
+                            <span class="text-black">1h:30min</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="material-icons text-black mr-2">alarm_on</i>
+                            <span class="text-black">1h:40min</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Ajouter a ma liste</button>
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Voir tutoriel</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="./assets/images/maram/detail-couscous.png" alt="Couscous aux légumes" class="w-full rounded-lg mb-4">
+                    <div class="flex justify-between items-center">
+                        <div class="text-xl font-semibold">Prix: 15.00DT</div>
+                        <div class="flex items-center space-x-2">
+                            <button class="bg-primary text-white w-8 h-8 rounded-full">-</button>
+                            <span>1 plat / personne</span>
+                            <button class="bg-primary text-white w-8 h-8 rounded-full">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" rounded-lg shadow-md p-6 ">
+
+            <div class="shadow-md mb-12 p-6 flex items-center justify-between bg-cardColor p-4 rounded-standard">
+                <h2 class="font-playfair m-0 text-2xl font-semibold">Ingredients</h2>
+                
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-primary mb-4">Epices</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div class="flex flex-col items-center">
+                        <img src="./assets/images/maram/salt.png" alt="Poivre" class="w-12 h-12 object-contain">
+
+                        <span>sel</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="./assets/images/maram/poivre.png" alt="Poivre" class="w-12 h-12 object-contain">
+                        <span>Poivre</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-primary mb-4">Aliments</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/maram/ing1.png" alt="Huile" class="w-full">
+                    <img src="./assets/images/maram/ing2.png" alt="Couscous" class="w-full">
+                    <img src="./assets/images/maram/ing3.png" alt="Tomate" class="w-full">
+                    <img src="./assets/images/maram/ing4.png" alt="Poulet" class="w-full">
+                    <img src="./assets/images/maram/ing5.png" alt="Épices" class="w-full">
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-primary mb-4">Legumes</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg1.png" alt="Carotte" class="w-full">
+                        <span class="absolute top-0 left-0 bg-bioGreen text-white text-xs px-2 py-1 rounded">BIO</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg2.png" alt="Tomate" class="w-full">
+                        <span class="absolute top-0 left-0 bg-bioGreen text-white text-xs px-2 py-1 rounded">BIO</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg3.png" alt="Poivron" class="w-full">
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg4.png" alt="Pomme de terre" class="w-full">
+                        <span class="absolute top-0 left-0 bg-bioGreen text-white text-xs px-2 py-1 rounded">BIO</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg5.png" alt="Ail" class="w-full">
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/images/maram/veg6.png" alt="Oignon" class="w-full">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center">
+                <button onclick="window.location.href='ingrédients_page.html'" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-primary-dark">Modifier mes ingrédients</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+    <footer class="bg-secondary text-white py-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Liens alignés à gauche -->
+            <ul class="flex space-x-4 justify-start">
+                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+            </ul>  
+            
+            <!-- Liens alignés à droite -->
+            <ul class="flex space-x-4 justify-end">
+                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
+            </ul>
+        </div>
+        
+        <div class="container mx-auto text-center  text-gray-500 py-4">
+            <p>&copy; 2025 AlaKifek. Tous droits réservés.</p>
+        </div>
+    </footer>
+<style>
+    :root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

@@ -9,6 +9,7 @@ module.exports = {
         primary:"#67193D",
         secondary:"#EEEEEE",
         bg:"#FFEBEB",
+        
       },
       fontFamily:{
         sans:["Inter","sans-serif"],
