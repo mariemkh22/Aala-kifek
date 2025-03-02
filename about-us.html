@@ -51,7 +51,7 @@
         </div>
     <main class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
         <section class="mb-8 fade-in">
-            <h2 class="section-title text-4xl border-b-2 border-[#67193D] pb-2 mb-4">Notre Mission</h2>
+            <h2 class="section-title text-4xl border-b-2 border-primary pb-2 mb-4">Notre Mission</h2>
             <p class="section-subtitle">
                 Chez AlaKifek , nous nous engageons à fournir des kits repas sains et délicieux, 
                 pour transformer votre expérience culinaire en un moment de plaisir et de simplicité.
@@ -62,7 +62,7 @@
         </section>
 
         <section class="mb-8 fade-in">
-            <h2 class="section-title text-4xl border-b-2 border-[#67193D] pb-2 mb-4">Notre Histoire</h2>
+            <h2 class="section-title text-4xl border-b-2 border-primary pb-2 mb-4">Notre Histoire</h2>
             <div class="image-container mb-4">
                 <img src="images/h5.webp" alt="Image 1" class="image-slide active">
                 <img src="images/h2.jpg" alt="Image 2" class="image-slide">
@@ -79,7 +79,7 @@
         </section>
 
         <section class="mb-8 fade-in">
-            <h2 class="section-title text-4xl border-b-2 border-[#67193D] pb-2 mb-4">Nos Valeurs</h2>
+            <h2 class="section-title text-4xl border-b-2 border-primary pb-2 mb-4">Nos Valeurs</h2>
             <ul class="list-disc list-inside text-lg">
                 <li class="slide-up">🌱 <span class="highlight">Qualité :</span> Nous utilisons des ingrédients frais et de haute qualité.</li>
                 <li class="slide-up">🌍 <span class="highlight">Accessibilité :</span> Nous voulons que nos kits soient accessibles à tous.</li>
@@ -88,7 +88,7 @@
         </section>
 
         <section class="mb-8 fade-in">
-            <h2 class="section-title text-4xl border-b-2 border-[#67193D] pb-2 mb-4">Découvrez notre Processus</h2>
+            <h2 class="section-title text-4xl border-b-2 border-primary pb-2 mb-4">Découvrez notre Processus</h2>
             <div class="mb-4">
                 <video controls class="w-full rounded-lg shadow-lg">
                     <source src="vds/Vidéo sans titre ‐ Réalisée avec Clipchamp.mp4" type="video/mp4">
@@ -115,7 +115,6 @@
     
 
     <script>
-        // Ajout d'effet d'animation au chargement de la page
         document.addEventListener("DOMContentLoaded", function() {
             const sections = document.querySelectorAll('.fade-in, .slide-up');
             sections.forEach((section, index) => {
@@ -123,7 +122,6 @@
                 section.classList.add('fade-in');
             });
 
-            // Fonction pour changer les images toutes les 3 secondes
             let currentIndex = 0;
             const slides = document.querySelectorAll('.image-slide');
 
@@ -140,15 +138,13 @@
 
     <footer class="bg-secondary text-white py-1">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Liens alignés à gauche -->
             <ul class="flex space-x-4 justify-start">
-                <li><a href="#" class="hover:text-black text-[18px] text-primary">About Us</a></li>
-                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">About Us</a></li>
+                <li><a href="ContactUs.html" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
             </ul>
             
-            <!-- Liens alignés à droite -->
             <ul class="flex space-x-4 justify-end">
-                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
@@ -160,6 +156,18 @@
         </div>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+    
     <style>
         .fade-in {
              opacity: 0;

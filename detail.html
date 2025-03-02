@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">  
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><Details></Details></title>
     <link rel="stylesheet" href="output.css">
@@ -9,16 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
 </head>
 
-<header>
-<body class="bg-bg text-gray-800 min-h-screen flex flex-col">
 
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {  
+                colors: {
+                    bgColor: '#f4ecea',
+                    cardColor: '#e4e4e4',
+                    primary: '#632645',
+                    secondary: '#f5f6f8',
+                    textColor: '#262d44',
+                    bioGreen: '#77ae29'
+                },
+                borderRadius: {
+                    standard: '8px'
+                },
+                fontFamily: {
+                    'playfair': ['"Playfair Display"', 'serif'],
+                    'petemoss': ['Petemoss', 'cursive'],
+                    'poppins': ['Poppins', 'sans-serif']
+                }
+            }
+        }
+    }
+</script>
+
+<header style="width: 100%;">
     <!-- Navbar -->
     <nav class="bg-secondary shadow-md py-1">
         <div class="container mx-auto px-4 py-1 flex justify-between items-center">
-            <div class="flex items-center space-x-0">
-                <button class="px-4 rounded-full bg-primary text-primary">aaa</button>
+            <div class="flex items-center space-x-0 gap-4">
+                <button class="px-3 rounded-full bg-primary text-primary">aaa</button>
                 <a href="home.html" class="text-4xl text-black font-petemoss">Ala Kifek</a>
             </div>
             <ul class="flex p-2 m-0 space-x-3">
@@ -41,8 +67,8 @@
     </div>
     </nav>
 </header>
-    
-    <main class="container mx-auto px-4 py-8">
+<body class="bg-bg text-gray-800 min-h-screen flex flex-col items-center justify-center">
+    <main style="width:90%" class="container mx-auto px-4 py-8">
         <section  style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)" class=" rounded-lg p-6 mb-8">
             <div class="flex flex-col jjustify-between md:flex-row md:space-x-8">
                 <div class="flex flex-col items-center justify-center md:w-1/2 mb-6 md:mb-0">
@@ -62,8 +88,10 @@
                         </div>
                     </div>
                     <div class="flex space-x-4">
-                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Ajouter a ma liste</button>
-                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Voir tutoriel</button>
+                        <button onclick="window.location.href='repas-sauv.html'" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">
+                            Ajouter à ma liste
+                          </button>
+                                                  <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Voir tutoriel</button>
                     </div>
                 </div>
                 <div class="md:w-1/2">
@@ -147,17 +175,17 @@
     </main>
 </body>
 
-    <footer class="bg-secondary text-white py-1">
+    <footer style="width: 100%;" class="bg-secondary text-white py-1">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Liens alignés à gauche -->
             <ul class="flex space-x-4 justify-start">
                 <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">About Us</a></li>
-                <li><a href="#" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
+                <li><a href="ContactUs.html" class="hover:text-black text-[18px] text-primary">Contact Us</a></li>
             </ul>  
             
             <!-- Liens alignés à droite -->
             <ul class="flex space-x-4 justify-end">
-                <li><a href="about-us.html" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
+                <li><a href="#" class="hover:text-black text-[18px] text-primary">Facebook</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">Instagrame</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">YouTube</a></li>
                 <li><a href="#" class="hover:text-black text-[18px] text-primary">#</a></li>
@@ -168,10 +196,3 @@
             <p>&copy; 2025 AlaKifek. Tous droits réservés.</p>
         </div>
     </footer>
-<style>
-    :root{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
